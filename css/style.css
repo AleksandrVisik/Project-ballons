@@ -77,6 +77,10 @@ body {
 }
 
 .btn:link, .btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #777777;
   padding: 1.5rem 4rem;
   background: #ffffff;
   border-radius: 5rem;

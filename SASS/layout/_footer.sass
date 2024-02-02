@@ -9,7 +9,13 @@
     &__item
         display: inline-block
         &:not(:last-child)
-            margin-right: 5rem
+            margin-right: 2rem
+        @include respond(tab-land)
+            &:not(:last-child)
+                margin-right: 1.6rem
+        @include respond(tab-port)
+            margin: 0
+            padding: 2rem
 
     &__link
 
@@ -27,8 +33,3 @@
             transform: rotate(5deg) scale(1.2)
             color: $color-brown-dark
             box-shadow: $h2-shadow
-            
-            
-            
-
-

@@ -12,23 +12,31 @@
     <title>Ballons</title>
   </head>
   <body>
-
     <div class="container">
       <div class="navigation">
-        <input type="checkbox" class="navigation__toggle" id="navi-toggle">
+        <input type="checkbox" class="navigation__toggle" id="navi-toggle" />
         <label for="navi-toggle" class="navigation__button">
           <span class="navigation__icon"></span>
         </label>
         <div class="navigation__backgraund"></div>
         <nav class="navigation__nav">
           <ul class="navigation__list">
-            <li class="navigation__item"><a href="#" class="navigation__link">о нас</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">скидки</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">лучшие туры</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">калькулятор цены</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">связаться с нами</a></li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">о нас</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">скидки</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">лучшие туры</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">калькулятор цены</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">связаться с нами</a>
+            </li>
           </ul>
-
         </nav>
       </div>
       <header class="header">
@@ -81,16 +89,39 @@
               <div class="composition">
                 <img
                   src="img/photo-ballons-1.png"
+                  srcset="
+                    img/photo-ballons-1.png 954w,
+                    img/photo-ballons-1-small.png 318w
+                  "
+                  sizes="(max-width: 1240px) 23vw,
+                        (max-width: 900px) 43vw,
+                        (max-width: 600px) 50vw, 300px"
                   alt="photo-ballons-1"
                   class="composition__photo composition__photo_n1"
                 />
+
                 <img
                   src="img/photo-ballons-2.png"
+                  srcset="
+                    img/photo-ballons-2.png 954w,
+                    img/photo-ballons-2-small.png 318w
+                  "
+                  sizes="(max-width: 1240px) 23vw,
+                        (max-width: 900px) 43vw,
+                        (max-width: 600px) 50vw, 300px"
                   alt="photo-ballons-2"
                   class="composition__photo composition__photo_n2"
                 />
+
                 <img
                   src="img/photo-ballons-3.png"
+                  srcset="
+                    img/photo-ballons-3.png 954w,
+                    img/photo-ballons-3-small.png 318w
+                  "
+                  sizes="(max-width: 1240px) 23vw,
+                        (max-width: 900px) 43vw,
+                        (max-width: 600px) 50vw, 300px"
                   alt="photo-ballons-3"
                   class="composition__photo composition__photo_n3"
                 />
@@ -284,7 +315,7 @@
               </div>
             </div>
           </div>
-          <div class="text-aling-center">
+          <div class="text-aling-center none-display">
             <a href="#" class="btn">забронировать</a>
           </div>
         </section>
@@ -432,11 +463,21 @@
         </div>
         <div class="row">
           <ul class="footer__list">
-            <li class="footer__item"><a href="#" class="footer__link">о нас</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">скидки</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">лучшие туры</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">калькулятор цены</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">связаться с нами</a></li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">о нас</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">скидки</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">лучшие туры</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">калькулятор цены</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">связаться с нами</a>
+            </li>
           </ul>
         </div>
       </footer>

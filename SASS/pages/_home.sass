@@ -1,11 +1,20 @@
 .section-about
     padding-top: 8rem
-    margin-bottom: 5rem
+    margin-bottom: 20rem
+    @include respond(tab-land)
+        margin-bottom: 13rem
+    @include respond(tab-port)
+        margin-bottom: 40rem
+
 
 .section-adventure
     padding: 20rem 0
     background: linear-gradient(90deg, rgba($color-brown-light, 0.70), rgba($color-black, 0.70)), url(../img/section-adventure.jpg) center / cover no-repeat
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%)
+    @include respond(tab-land)
+        padding: 15rem 0
+    @include respond(tab-port)
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%)
 
 .section-tour
     padding: 6rem
@@ -18,3 +27,5 @@
 .section-book
     padding: 10rem
     background: linear-gradient(90deg, $color-brown-light, $color-brown-dark)
+    @include respond(tab-port)
+        padding: 4rem

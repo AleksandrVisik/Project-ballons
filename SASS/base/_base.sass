@@ -5,7 +5,18 @@
     box-sizing: border-box
 html
     font-size: 62.5%
-       
+    @include respond(tab-land)
+        font-size: 56.25%
+    @include respond(tab-port)
+        font-size: 45%
+    @include respond(iphone)
+        font-size: 37.5%
+    @include respond(phone)
+        font-size: 25%
+    @include respond(big-screen)
+        font-size: 75%
+    
+
 body
     padding: 5rem
     background-color: $color-white
